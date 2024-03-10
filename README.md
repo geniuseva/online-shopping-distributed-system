@@ -29,7 +29,7 @@ netstat -ano | findstr "9876"
 ### ShutDown RocketMQ
 mqshutdown broker
 mqshutdown namesrv
-如果不是第一次运行rocketmq，则将C:\Users\Administrator\store文件夹下的文件全部删除，则可以正常启动
+If not running rocketmq on the first time，please delete all files in "C:\Users\Administrator\store"，then it can be run successfully.
 ### Delete Message:
 `./mqadmin deleteTopic -c DefaultCluster -n localhost:9876 -t {topicName}`
 ### Environment setup
